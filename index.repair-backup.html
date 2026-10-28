@@ -1,0 +1,705 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#10291f">
+  <meta name="description" content="Waste2Worth turns waste reporting into community action. Report waste, discover recycling options, and track local impact.">
+  <title>Waste2Worth — A better life for waste</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="cursor-aura" aria-hidden="true"></div>
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <header class="site-header">
+    <a href="#home" class="brand" aria-label="Waste2Worth home">
+      <span class="brand-symbol">
+        <svg viewBox="0 0 40 40" aria-hidden="true">
+          <path d="M20 4 33 11.5V27L20 35 7 27V12Z" fill="none" stroke="currentColor" stroke-width="2"/>
+          <path d="M13 17a8 8 0 0 1 13-4l2 2M28 15l-1 5-5-2M27 23a8 8 0 0 1-13 4l-2-2M12 25l1-5 5 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </span>
+      <span>Waste<span class="brand-light">2</span>Worth<span class="brand-period">.</span></span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="#mission">Our mission</a>
+      <a href="#impact">Our impact</a>
+      <a href="#report">Report waste</a>
+      <a href="#reports">Community</a>
+      <a class="nav-cta" href="#report">Make a difference <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-grain" aria-hidden="true"></div>
+      <div class="hero-orbit orbit-one" aria-hidden="true"></div>
+      <div class="hero-orbit orbit-two" aria-hidden="true"></div>
+
+      <div class="hero-content reveal">
+        <div class="eyebrow eyebrow-light">
+          <span class="live-dot"></span>
+          SMALL ACTIONS. LASTING CHANGE.
+        </div>
+
+        <h1>Waste isn't<br>the <span class="headline-accent">end.</span><br>It's a beginning<span class="headline-dot">.</span></h1>
+
+        <p class="hero-copy">A cleaner world starts with one small action. Report waste, discover smarter ways to recycle, and turn everyday problems into lasting change.</p>
+
+        <div class="hero-actions">
+          <a href="#report" class="button button-lime magnetic">
+            Report waste <span class="button-arrow">↗</span>
+          </a>
+          <a href="#mission" class="text-link light-link">Discover our mission <span>↓</span></a>
+        </div>
+
+        <div class="hero-proof">
+          <div class="avatar-stack" aria-hidden="true">
+            <span>🌱</span><span>♻️</span><span>🌍</span>
+          </div>
+          <div>
+            <strong>One planet. One shared responsibility.</strong>
+            <p>Every report is a step towards change.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-art reveal reveal-delay" aria-label="Green forest and sustainable environment">
+        <div class="art-image-wrap">
+          <img class="hero-image"
+               src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1200&q=85"
+               alt="Sunlight filtering through a lush green forest"
+               fetchpriority="high">
+          <div class="image-overlay"></div>
+          <div class="image-caption">
+            <span class="caption-icon">✳</span>
+            <span><small>THE GOAL</small><strong>A world worth passing on.</strong></span>
+          </div>
+        </div>
+
+        <div class="floating-card floating-card-top glass-card">
+          <span class="floating-icon">↗</span>
+          <div><small>THE BIG PICTURE</small><strong>Progress starts here</strong></div>
+        </div>
+
+        <div class="floating-card floating-card-bottom glass-card">
+          <span class="floating-leaf">✳</span>
+          <div><small>YOUR NEXT STEP</small><strong>Make waste count.</strong></div>
+          <span class="mini-arrow">↗</span>
+        </div>
+
+        <div class="art-sticker">LESS<br>WASTE.<br><span>MORE</span><br>FUTURE.</div>
+      </div>
+
+      <div class="hero-bottom">
+        <span>01 — A NEW WAY TO THINK ABOUT WASTE</span>
+        <a href="#impact">SCROLL TO EXPLORE <span>↓</span></a>
+      </div>
+    </section>
+
+    <!-- MISSION -->
+    <section class="mission section-pad" id="mission">
+      <div class="section-heading reveal">
+        <span class="eyebrow"><span class="eyebrow-line"></span> WHY WASTE2WORTH</span>
+        <h2>Make the invisible<br>problem <span class="serif-accent">impossible</span><br>to ignore.</h2>
+      </div>
+
+      <div class="mission-layout">
+        <div class="mission-photo reveal">
+          <img src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&w=1000&q=85"
+               alt="Recycling containers and materials ready for sorting"
+               loading="lazy">
+          <div class="photo-note"><span>↗</span> A little care goes a long way.</div>
+          <div class="photo-number">01<span>/03</span></div>
+        </div>
+
+        <div class="mission-copy reveal reveal-delay">
+          <p class="large-copy">The waste we ignore today becomes the world we live in tomorrow.</p>
+          <p>Waste2Worth gives communities a simple way to report waste, keep track of cleanup progress, and learn what can be reused or recycled.</p>
+          <p>We believe a cleaner future doesn't start with a perfect plan. It starts when somebody decides to act.</p>
+
+          <div class="mission-points">
+            <div class="mission-point"><span>01</span><div><strong>Spot the problem</strong><p>Help identify waste where it happens.</p></div></div>
+            <div class="mission-point"><span>02</span><div><strong>Make it visible</strong><p>Record reports and follow their progress.</p></div></div>
+            <div class="mission-point"><span>03</span><div><strong>Change the outcome</strong><p>Learn better ways to reduce and recycle waste.</p></div></div>
+          </div>
+          <a href="#report" class="text-link">Be part of the change <span>↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- IMPACT -->
+    <section class="impact-section" id="impact">
+      <div class="impact-top">
+        <div class="reveal">
+          <span class="eyebrow eyebrow-light"><span class="eyebrow-line"></span> OUR COMMUNITY DASHBOARD</span>
+          <h2>Small actions.<br><span class="serif-light">Visible impact.</span></h2>
+        </div>
+        <p class="impact-intro reveal reveal-delay">Every report makes a problem easier to see. Every resolution is a reason to keep going.</p>
+      </div>
+
+      <div class="impact-grid">
+        <article class="impact-card reveal">
+          <div class="impact-card-top"><span>01 / REPORTED</span><span class="metric-icon">↗</span></div>
+          <div class="metric-number" id="totalReports" data-count="0">0</div>
+          <h3>Reports submitted</h3>
+          <p>Waste issues recorded by the community.</p>
+          <div class="metric-line"><span style="width:72%"></span></div>
+        </article>
+
+        <article class="impact-card reveal reveal-delay">
+          <div class="impact-card-top"><span>02 / RESOLVED</span><span class="metric-icon">✓</span></div>
+          <div class="metric-number" id="resolvedReports" data-count="0">0</div>
+          <h3>Issues resolved</h3>
+          <p>Reports marked as successfully resolved.</p>
+          <div class="metric-line"><span style="width:48%"></span></div>
+        </article>
+
+        <article class="impact-card reveal">
+          <div class="impact-card-top"><span>03 / MATERIAL</span><span class="metric-icon">↻</span></div>
+          <div class="metric-number"><span id="wasteTotal" data-count="0">0</span><small> units</small></div>
+          <h3>Waste reported</h3>
+          <p>Total quantity recorded in submitted reports.</p>
+          <div class="metric-line"><span style="width:61%"></span></div>
+        </article>
+
+        <article class="impact-card impact-card-featured reveal reveal-delay">
+          <div class="impact-card-top"><span>04 / RECYCLING</span><span class="metric-icon">✳</span></div>
+          <div class="metric-number" id="recyclingReports" data-count="0">0</div>
+          <h3>Recycling opportunities</h3>
+          <p>Reports involving materials with recycling potential.</p>
+          <div class="metric-line"><span style="width:82%"></span></div>
+        </article>
+      </div>
+      <p class="dashboard-note">Dashboard values update from reports saved in this browser. They are prototype metrics, not verified environmental impact.</p>
+    </section>
+
+    <!-- WASTE CATEGORY STORIES -->
+    <section class="materials-section section-pad">
+      <div class="section-heading reveal">
+        <span class="eyebrow"><span class="eyebrow-line"></span> KNOW YOUR WASTE</span>
+        <h2>Different waste.<br><span class="serif-accent">Different futures.</span></h2>
+      </div>
+      <p class="section-intro reveal">Understanding what you throw away is the first step towards keeping valuable materials in use.</p>
+
+      <div class="material-grid">
+        <article class="material-card material-plastic reveal">
+          <div class="material-photo">
+            <img src="https://images.unsplash.com/photo-1530587191325-3db32d826c18?auto=format&fit=crop&w=800&q=80" alt="Plastic bottles and waste materials" loading="lazy">
+            <span class="material-number">01</span>
+            <span class="material-symbol">↗</span>
+          </div>
+          <div class="material-content"><span class="material-tag">SORT & RECYCLE</span><h3>Plastic</h3><p>Separate recyclable plastic, empty containers, and follow local recycling rules.</p><a href="#guidance">Explore guidance <span>↗</span></a></div>
+        </article>
+
+        <article class="material-card material-organic reveal reveal-delay">
+          <div class="material-photo">
+            <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80" alt="Fresh vegetables and organic materials" loading="lazy">
+            <span class="material-number">02</span>
+            <span class="material-symbol">↗</span>
+          </div>
+          <div class="material-content"><span class="material-tag">COMPOST & REUSE</span><h3>Organic waste</h3><p>Suitable food scraps and garden waste can often become useful compost.</p><a href="#guidance">Explore guidance <span>↗</span></a></div>
+        </article>
+
+        <article class="material-card material-paper reveal">
+          <div class="material-photo">
+            <img src="https://images.unsplash.com/photo-1531058020387-3be344556be6?auto=format&fit=crop&w=800&q=80" alt="Paper materials ready to be sorted" loading="lazy">
+            <span class="material-number">03</span>
+            <span class="material-symbol">↗</span>
+          </div>
+          <div class="material-content"><span class="material-tag">REDUCE & REUSE</span><h3>Paper & cardboard</h3><p>Keep clean paper dry, reuse packaging, and separate it for collection.</p><a href="#guidance">Explore guidance <span>↗</span></a></div>
+        </article>
+      </div>
+      <p class="small-note">Always follow local recycling and waste-disposal rules. Not every material is accepted everywhere.</p>
+    </section>
+
+    <!-- REPORT FORM -->
+    <section class="report-section" id="report">
+      <div class="report-intro reveal">
+        <span class="eyebrow eyebrow-light"><span class="eyebrow-line"></span> TAKE THE FIRST STEP</span>
+        <h2>See waste?<br><span class="serif-light">Say something.</span></h2>
+        <p>It takes just a moment to report an issue. Add the details you know and help make the problem visible.</p>
+        <div class="report-side-note"><span>✳</span><p><strong>Every report matters.</strong><br>Your small action can start a bigger conversation.</p></div>
+        <div class="report-decoration" aria-hidden="true">W2W</div>
+      </div>
+
+      <div class="report-form-wrap reveal reveal-delay">
+        <div class="form-heading"><span class="form-step">FORM / 01</span><span class="form-required">* Required fields</span></div>
+        <h3>Report a waste issue</h3>
+        <p class="form-description">Share what you found. We'll add it to your local demo dashboard.</p>
+
+        <form id="wasteForm">
+          <div class="form-row">
+            <div class="form-field">
+              <label for="wasteType">Waste category <span>*</span></label>
+              <select id="wasteType" name="wasteType" required>
+                <option value="">Select category</option>
+                <option value="Plastic">Plastic</option>
+                <option value="Paper">Paper</option>
+                <option value="Organic">Organic</option>
+                <option value="E-waste">E-waste</option>
+                <option value="Metal">Metal</option>
+                <option value="Glass">Glass</option>
+                <option value="Mixed">Mixed waste</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="urgency">Priority level <span>*</span></label>
+              <select id="urgency" name="urgency" required>
+                <option value="Low">Low priority</option>
+                <option value="Medium" selected>Medium priority</option>
+                <option value="High">High priority</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="location">Location <span>*</span></label>
+            <input id="location" name="location" placeholder="e.g. Near the college canteen" required maxlength="180">
+          </div>
+
+          <div class="form-field">
+            <label for="quantity">Estimated quantity <span>*</span></label>
+            <div class="quantity-wrap">
+              <input id="quantity" name="quantity" type="number" min="0.1" step="0.1" placeholder="e.g. 5" required>
+              <span>units / bags</span>
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="description">What did you notice? <span>*</span></label>
+            <textarea id="description" name="description" placeholder="Describe the waste and the surrounding area..." required maxlength="1000"></textarea>
+            <div class="field-footer"><span>Be clear and specific.</span><span id="descriptionCount">0 / 1000</span></div>
+          </div>
+
+          <div class="form-field">
+            <label for="wastePhoto">Add a photo <span class="optional-label">OPTIONAL</span></label>
+            <input id="wastePhoto" name="wastePhoto" type="file" accept="image/*">
+            <span class="field-hint">A photo can help explain the issue. Use an image under 1 MB.</span>
+          </div>
+
+          <div id="formMessage" class="form-message" role="status" aria-live="polite"></div>
+          <button type="submit" class="button button-dark form-submit">
+            Submit report <span class="button-arrow">↗</span>
+          </button>
+          <p class="privacy-note"><span>◈</span> Prototype mode: reports are stored in this browser only.</p>
+        </form>
+      </div>
+    </section>
+
+    <!-- GUIDANCE -->
+    <section class="guidance-section section-pad" id="guidance">
+      <div class="guidance-heading reveal">
+        <span class="eyebrow"><span class="eyebrow-line"></span> BETTER HABITS, BETTER FUTURE</span>
+        <h2>Give good materials<br>a <span class="serif-accent">second life.</span></h2>
+        <p>Not everything belongs in the same bin. A few mindful habits can make a difference.</p>
+      </div>
+
+      <div class="guidance-layout">
+        <div class="guidance-image reveal">
+          <img src="https://images.unsplash.com/photo-1611284446314-60a58ac0deb9?auto=format&fit=crop&w=1000&q=85"
+               alt="Recycling and sustainable living concept" loading="lazy">
+          <div class="guidance-image-label"><span>♻</span><span>THINK BEFORE YOU THROW.</span></div>
+        </div>
+
+        <div class="guidance-list reveal reveal-delay">
+          <article class="guidance-item"><span class="guidance-index">01</span><div><h3>Separate at the source</h3><p>Keep wet and dry waste apart wherever local collection systems support it.</p></div><span class="guidance-arrow">↗</span></article>
+          <article class="guidance-item"><span class="guidance-index">02</span><div><h3>Reuse before recycling</h3><p>Use durable items again when safe and practical before sending them for recycling.</p></div><span class="guidance-arrow">↗</span></article>
+          <article class="guidance-item"><span class="guidance-index">03</span><div><h3>Keep recyclables clean</h3><p>Empty containers and check your local collection requirements before sorting.</p></div><span class="guidance-arrow">↗</span></article>
+          <article class="guidance-item"><span class="guidance-index">04</span><div><h3>Handle special waste carefully</h3><p>Use approved collection points for batteries, electronics, chemicals, and hazardous waste.</p></div><span class="guidance-arrow">↗</span></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMMUNITY REPORTS -->
+    <section class="community-section" id="reports">
+      <div class="community-heading">
+        <div class="reveal">
+          <span class="eyebrow"><span class="eyebrow-line"></span> COMMUNITY ACTION LOG</span>
+          <h2>From report<br>to <span class="serif-accent">resolution.</span></h2>
+        </div>
+        <p class="reveal reveal-delay">Explore recorded reports, search by location or category, and update the demo status to see the workflow in action.</p>
+      </div>
+
+      <div class="reports-toolbar">
+        <div class="search-wrap">
+          <span>⌕</span>
+          <input type="search" id="searchReports" placeholder="Search location, category, details..." aria-label="Search reports">
+        </div>
+        <div class="filter-wrap">
+          <label for="statusFilter">Filter</label>
+          <select id="statusFilter" aria-label="Filter reports by status">
+            <option value="all">All statuses</option>
+            <option value="Reported">Reported</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Resolved">Resolved</option>
+          </select>
+        </div>
+        <button type="button" id="resetDemo" class="reset-button">Reset demo ↺</button>
+      </div>
+
+      <div id="reportList" class="report-list">
+        <!-- Existing JavaScript inserts report cards here. -->
+      </div>
+
+      <div class="community-foot"><span class="live-dot"></span><span>LIVE IN THIS BROWSER</span><span class="foot-divider">/</span><span>Demo data is stored locally</span></div>
+    </section>
+
+    <!-- CTA -->
+    <section class="final-cta">
+      <div class="cta-orb" aria-hidden="true"></div>
+      <div class="reveal">
+        <span class="eyebrow eyebrow-light">THE FUTURE IS A SHARED PROJECT</span>
+        <h2>Don't just imagine<br>a cleaner world.<br><span>Help build it.</span></h2>
+        <a href="#report" class="button button-lime magnetic">Start with one report <span class="button-arrow">↗</span></a>
+      </div>
+      <div class="cta-side-label">BETTER HABITS. LESS WASTE. MORE POSSIBILITY.</div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a href="#home" class="brand footer-brand">
+      <span class="brand-symbol">
+        <svg viewBox="0 0 40 40" aria-hidden="true">
+          <path d="M20 4 33 11.5V27L20 35 7 27V12Z" fill="none" stroke="currentColor" stroke-width="2"/>
+          <path d="M13 17a8 8 0 0 1 13-4l2 2M28 15l-1 5-5-2M27 23a8 8 0 0 1-13 4l-2-2M12 25l1-5 5 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </span>
+      <span>Waste<span class="brand-light">2</span>Worth<span class="brand-period">.</span></span>
+    </a>
+    <p>Less waste. More possibility.</p>
+    <a href="#home" class="back-top">BACK TO TOP ↑</a>
+    <div class="footer-bottom"><span>© 2026 Waste2Worth — Student prototype</span><span>Designed for a more thoughtful future.</span></div>
+  </footer>
+</body>
+
+<!-- Waste2Worth Premium Effects -->
+<div id="scrollProgress"></div>
+<div class="cursor-aura" aria-hidden="true"></div>
+
+<style>
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+  }
+
+<!-- Waste2Worth Premium Effects -->
+<div id="scrollProgress"></div>
+<div class="cursor-aura" aria-hidden="true"></div>
+
+<style>
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  #scrollProgress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 4px;
+    z-index: 99999;
+    background: linear-gradient(90deg, #28d17c, #a3ffbf, #e2ff9e);
+    box-shadow: 0 0 18px #55ff9c;
+    pointer-events: none;
+  }
+
+  .cursor-aura {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    background: radial-gradient(
+      350px circle at var(--mx, 50%) var(--my, 50%),
+      rgba(64, 255, 142, 0.09),
+      transparent 70%
+    );
+  }
+
+  .reveal {
+    opacity: 0;
+    transform: translateY(25px);
+    transition: opacity 700ms ease, transform 700ms ease;
+  }
+
+  .reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .report-card,
+  .stat-card,
+  .impact-card,
+  .feature-card {
+    transition: transform 300ms ease, box-shadow 300ms ease;
+  }
+
+  .report-card:hover,
+  .stat-card:hover,
+  .impact-card:hover,
+  .feature-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 40px rgba(30, 180, 100, 0.15);
+  }
+
+  button {
+    transition: transform 200ms ease, filter 200ms ease;
+  }
+
+  button:hover {
+    filter: brightness(1.08);
+  }
+
+  button:active {
+    transform: scale(0.97);
+  }
+
+  input:focus,
+  select:focus,
+  textarea:focus {
+    outline: 2px solid #64ec9b;
+    outline-offset: 2px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      scroll-behavior: auto !important;
+      animation: none !important;
+      transition: none !important;
+    }
+
+    .reveal {
+      opacity: 1;
+      transform: none;
+    }
+  }
+</style>
+
+<script>
+(() => {
+  // Scroll progress bar
+  const progress = document.getElementById("scrollProgress");
+
+  function updateProgress() {
+    if (!progress) return;
+
+    const scrollable =
+      document.documentElement.scrollHeight - window.innerHeight;
+
+    const percentage = scrollable > 0
+      ? (window.scrollY / scrollable) * 100
+      : 0;
+
+    progress.style.width = percentage + "%";
+  }
+
+  window.addEventListener("scroll", updateProgress, { passive: true });
+  window.addEventListener("resize", updateProgress);
+  updateProgress();
+
+  // Green cursor glow
+  document.addEventListener("pointermove", event => {
+    document.documentElement.style.setProperty("--mx", event.clientX + "px");
+    document.documentElement.style.setProperty("--my", event.clientY + "px");
+  });
+
+  // Reveal sections while scrolling
+  const reducedMotion =
+    window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  const targets = document.querySelectorAll(
+    "main section, body > section, .report-card, .stat-card, .impact-card, .feature-card"
+  );
+
+  if ("IntersectionObserver" in window && !reducedMotion) {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    targets.forEach(element => {
+      element.classList.add("reveal");
+      observer.observe(element);
+    });
+  } else {
+    targets.forEach(element => element.classList.add("is-visible"));
+  }
+
+  console.log("Waste2Worth premium effects loaded!");
+})();
+</script>
+</body>
+</html>
+
+  body {
+    overflow-x: hidden;
+  }
+
+  #scrollProgress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 4px;
+    z-index: 99999;
+    background: linear-gradient(90deg, #28d17c, #a3ffbf, #e2ff9e);
+    box-shadow: 0 0 18px #55ff9c;
+    pointer-events: none;
+  }
+
+  .cursor-aura {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    background: radial-gradient(
+      350px circle at var(--mx, 50%) var(--my, 50%),
+      rgba(64, 255, 142, 0.09),
+      transparent 70%
+    );
+  }
+
+  .reveal {
+    opacity: 0;
+    transform: translateY(25px);
+    transition: opacity 700ms ease, transform 700ms ease;
+  }
+
+  .reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .report-card,
+  .stat-card,
+  .impact-card,
+  .feature-card {
+    transition: transform 300ms ease, box-shadow 300ms ease;
+  }
+
+  .report-card:hover,
+  .stat-card:hover,
+  .impact-card:hover,
+  .feature-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 40px rgba(30, 180, 100, 0.15);
+  }
+
+  button {
+    transition: transform 200ms ease, filter 200ms ease;
+  }
+
+  button:hover {
+    filter: brightness(1.08);
+  }
+
+  button:active {
+    transform: scale(0.97);
+  }
+
+  input:focus,
+  select:focus,
+  textarea:focus {
+    outline: 2px solid #64ec9b;
+    outline-offset: 2px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      scroll-behavior: auto !important;
+      animation: none !important;
+      transition: none !important;
+    }
+
+    .reveal {
+      opacity: 1;
+      transform: none;
+    }
+  }
+</style>
+
+<script>
+(() => {
+  // Scroll progress bar
+  const progress = document.getElementById("scrollProgress");
+
+  function updateProgress() {
+    if (!progress) return;
+
+    const scrollable =
+      document.documentElement.scrollHeight - window.innerHeight;
+
+    const percentage = scrollable > 0
+      ? (window.scrollY / scrollable) * 100
+      : 0;
+
+    progress.style.width = percentage + "%";
+  }
+
+  window.addEventListener("scroll", updateProgress, { passive: true });
+  window.addEventListener("resize", updateProgress);
+  updateProgress();
+
+  // Green cursor glow
+  document.addEventListener("pointermove", event => {
+    document.documentElement.style.setProperty("--mx", event.clientX + "px");
+    document.documentElement.style.setProperty("--my", event.clientY + "px");
+  });
+
+  // Reveal sections while scrolling
+  const reducedMotion =
+    window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  const targets = document.querySelectorAll(
+    "main section, body > section, .report-card, .stat-card, .impact-card, .feature-card"
+  );
+
+  if ("IntersectionObserver" in window && !reducedMotion) {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    targets.forEach(element => {
+      element.classList.add("reveal");
+      observer.observe(element);
+    });
+  } else {
+    targets.forEach(element => element.classList.add("is-visible"));
+  }
+
+  console.log("Waste2Worth premium effects loaded!");
+})();
+</script>
+<script src="script.js"></script>
+</body>
+</html>
